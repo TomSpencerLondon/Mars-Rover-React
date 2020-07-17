@@ -19,7 +19,7 @@ function App() {
     for (let i = 0; i < width; i++){
       let row = [];
       for (let j = 0; j < height; j++){
-        if ((rover.position.x == height - i - 1) && (rover.position.y == j)){
+        if ((rover.position.x === height - i - 1) && (rover.position.y === j)){
           row.push(1);
         }else{
           row.push(0);
