@@ -5,14 +5,18 @@ const width = 10;
 const height = 10;
 
 function App() {
-  const [rover, setRover] = useState(  {
-    position: {
-      x: 0,
-      y: 0
-    },
-    direction: "N",
-    blocked: false
-  });
+  function getRover() {
+    return {
+      position: {
+        x: 0,
+          y: 0
+      },
+      direction: "N",
+        blocked: false
+    };
+  }
+
+  const [rover, setRover] = useState(getRover());
 
   const [grid, setGrid] = useState(() => {
     const rows = [];
